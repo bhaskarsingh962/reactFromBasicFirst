@@ -100,6 +100,17 @@ When working with Node.js and React, you will see these two important files:
 1️⃣ package.json – Project Configuration & Dependencies
 2️⃣ package-lock.json – Exact Versions of Installed Packages
 
+package.jsong looke lie this
+
+code -
+"author": "bhaskar singh",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+  "parcel": "^2.14.2" this ^ cerit sign change miner version replace with new version and you can also use tilt(~) sign but it change to major update which cancrash ;
+
+
+
 
 
 📜 1. package.json (Project Configuration & Dependencies)
@@ -128,6 +139,8 @@ This file contains metadata about your project and a list of dependencies.
 } -->
 💡 If you share your project, others can run npm install, and it will install all dependencies from package.json.
 
+you can change sript tag and can write your own command to run project
+
 
 
 2. package-lock.json (Exact Versions of Installed Packages)
@@ -151,65 +164,3 @@ This file ensures that everyone gets the same package versions when installing d
 } -->
 
 
-
-
-
-################# parcel;#############
-
- What is Parcel in React? (Detailed Explanation)
-Parcel is a blazing-fast bundler for JavaScript applications, including React projects. It automatically bundles and optimizes files without needing any configuration like Webpack.
-
-🔥 Why Use Parcel?
-✔ Zero Configuration – No need for complex Webpack setup.
-✔ Super Fast – Uses multi-core processing for fast builds.
-✔ Hot Module Replacement (HMR) – Instantly updates changes in the browser.
-✔ Tree Shaking – Removes unused code to make the app smaller.
-✔ Supports Many File Types – Works with JS, CSS, images, and more.
-✔ Auto Optimization – Minifies code for production.
-
-
-  this comman -->npx parcel index.html
-Server running at http://localhost:1234
-✨ Built in 26ms
-
- use to genrate local host 
- advantage -->
- 1- now you dont need to use cdn links we can direct make local host link
-
-
-
-*******************NPX (Node Package Executor)
-📌 NPX is used to execute Node packages without installing them globally.
-
-🔹 Why use NPX?
-
-Run CLI tools without global installation.
-
-Automatically fetch the latest package version.
-
-Useful for one-time commands.
-
-🔹 Common Uses:
-
-Running a package without installing:
-
-npx package-name
-Running create-react-app (without installing globally):
-
-npx create-react-app my-app
-Checking Node.js version:
-
-
-npx node -v
-👉 Example: Running json-server without installing
-
-npx json-server --watch db.json
-🆚 NPM vs. NPX: Quick Comparison
-Feature	NPM	NPX
-Purpose	Install/manage packages	Execute packages directly
-Installation	Needs explicit install (npm install package)	No need to install globally
-Usage	Used for managing dependencies	Used for running one-time commands
-Example	npm install react	npx create-react-app my-app
-When to Use What?
-✅ Use npm when you want to install dependencies for your project.
-✅ Use npx when you want to run a command-line tool without installing it globally.
